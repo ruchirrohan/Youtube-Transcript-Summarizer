@@ -46,7 +46,6 @@ yt_link = st.text_input("Enter YouTube URL")
 
 if yt_link:
     video_id = extract_video_url(yt_link)
-    print(video_id)
     st.image(f"http://img.youtube.com/vi/{video_id}/0.jpg", use_container_width=True)
 
 summary_length = st.radio("Choose Summary Length", ["Short", "Medium", "Long"])
